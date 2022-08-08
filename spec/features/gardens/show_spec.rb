@@ -24,7 +24,5 @@ RSpec.describe 'garden show page' do
         expect(page).to have_content("SunFlower", count: 1)
         expect(page).to have_content("Rose", count: 1)
         expect(page).to_not have_content("Prickly Pear")
-
-        save_and_open_page
     end 
 end 
