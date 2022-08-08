@@ -63,7 +63,7 @@ RSpec.describe 'plots index page' do
             click_button("Delete Rose")
             expect(current_path).to eq("/plots")
         end
-        save_and_open_page
+
         within (page.all('.plot')[0]) do
             expect(page).to_not have_content("Delete Rose")
             expect(page).to_not have_content("Rose")

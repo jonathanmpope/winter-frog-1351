@@ -1,0 +1,5 @@
+<h3>Garden: <%= @garden.name %> </h3>
+<% @garden.uniq_plants_less_hundred_out.each do |plant| %>
+    <p>Name: <%= plant.name %></p>
+    <p>Days to harvest: <%= plant.days_to_harvest %></p>
+<% end %>
