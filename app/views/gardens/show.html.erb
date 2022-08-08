@@ -1,5 +1,10 @@
 <h3>Garden: <%= @garden.name %> </h3>
+<div id="plants">
 <% @garden.uniq_plants_less_hundred_out.each do |plant| %>
+    <div class="plant">
     <p>Name: <%= plant.name %></p>
     <p>Days to harvest: <%= plant.days_to_harvest %></p>
+    <p>Plant count: <%= plant.count %></p>
+    </div>
 <% end %>
+</div>

@@ -1,8 +1,7 @@
 class PlantPlotsController < ApplicationController
 
     def destroy
-        plant_plot = PlantPlot.find_item(params)[0]
-        plant_plot.destroy 
+        PlantPlot.find_item(params)[0].destroy 
         redirect_to "/plots"
     end 
 

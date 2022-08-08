@@ -24,11 +24,11 @@ RSpec.describe Garden do
       PlantPlot.create!(plant:plant2, plot:plot2)
       PlantPlot.create!(plant:plant3, plot:plot3)
 
-      expect(garden1.uniq_plants_less_hundred_out[0].name).to eq("SunFlower")
-      expect(garden1.uniq_plants_less_hundred_out[0].days_to_harvest).to eq(30)
-      expect(garden1.uniq_plants_less_hundred_out[1].name).to eq("Rose")
-      expect(garden1.uniq_plants_less_hundred_out[1].days_to_harvest).to eq(45)
-      expect(garden1.uniq_plants_less_hundred_out.count).to eq(2)
+      
+      expect(garden1.uniq_plants_less_hundred_out[0].name).to eq("Rose")
+      expect(garden1.uniq_plants_less_hundred_out[0].days_to_harvest).to eq(45)
+      expect(garden1.uniq_plants_less_hundred_out[1].name).to eq("SunFlower")
+      expect(garden1.uniq_plants_less_hundred_out[1].days_to_harvest).to eq(30)
     end 
   end 
 end

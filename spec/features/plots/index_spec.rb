@@ -49,12 +49,12 @@ RSpec.describe 'plots index page' do
         plant2= Plant.create!(name:"Rose", description:"a woody perennial flowering plant of the genus Rosa", days_to_harvest:45)
         plant3= Plant.create!(name:"Prickly Pear", description:"a genus of flowering plants in the cactus family Cactaceae", days_to_harvest:180)
         
-        PlantPlot.create!(plant:plant1, plot:plot1)
-        PlantPlot.create!(plant:plant2, plot:plot1)
-        PlantPlot.create!(plant:plant3, plot:plot1)
-        PlantPlot.create!(plant:plant3, plot:plot2)
-        PlantPlot.create!(plant:plant2, plot:plot2)
-        PlantPlot.create!(plant:plant3, plot:plot3)
+        pp1 = PlantPlot.create!(plant:plant1, plot:plot1)
+        pp2 = PlantPlot.create!(plant:plant2, plot:plot1)
+        pp3 = PlantPlot.create!(plant:plant3, plot:plot1)
+        pp4 = PlantPlot.create!(plant:plant3, plot:plot2)
+        pp5 = PlantPlot.create!(plant:plant2, plot:plot2)
+        pp6 = PlantPlot.create!(plant:plant3, plot:plot3)
 
         visit "/plots"
 
